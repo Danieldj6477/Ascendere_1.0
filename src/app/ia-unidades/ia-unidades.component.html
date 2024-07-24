@@ -1,0 +1,48 @@
+<div class="unidad-container">
+  <nav class="top-nav">
+    <button (click)="setActiveTab('inicio')">INICIO</button>
+    <button (click)="setActiveTab('unidad1')">Unidad 1</button>
+    <button (click)="setActiveTab('unidad2')">Unidad 2</button>
+    <button (click)="setActiveTab('unidad3')">Unidad 3</button>
+    <button (click)="setActiveTab('unidad4')">Unidad 4</button>
+    <button (click)="setActiveTab('unidad5')">Unidad 5</button>
+  </nav>
+
+  <div *ngIf="activeTab !== 'inicio'" class="unidad-content">
+    <h1>Contenido de {{ activeTab }}</h1>
+    <div class="video-section">
+      <img src="assets/images/placeholder-video.png" alt="Video Placeholder">
+      <p>Descripción del contenido de {{ activeTab }}...</p>
+    </div>
+    <div class="unidad-section">
+      <h2 (click)="toggleSection('objetivos')">Objetivo de la unidad.</h2>
+      <div *ngIf="sections['objetivos']">
+        <p>Descripción del objetivo de {{ activeTab }}...</p>
+      </div>
+    </div>
+    <div class="unidad-section">
+      <h2 (click)="toggleSection('contenidos')">Contenidos por abordar.</h2>
+      <div *ngIf="sections['contenidos']">
+        <p>Descripción de los contenidos de {{ activeTab }}...</p>
+      </div>
+    </div>
+    <div class="unidad-section">
+      <h2 (click)="toggleSection('conceptos')">Conceptos básicos: Inteligencia artificial.</h2>
+      <div *ngIf="sections['conceptos']">
+        <p>Descripción de los conceptos de {{ activeTab }}...</p>
+      </div>
+    </div>
+    <div class="unidad-section">
+      <h2 (click)="toggleSection('actividades')">Actividades de aprendizaje práctico.</h2>
+      <div *ngIf="sections['actividades']">
+        <p>Descripción de las actividades de {{ activeTab }}...</p>
+      </div>
+    </div>
+    <div class="unidad-section">
+      <h2 (click)="toggleSection('evaluacion')">Evaluación.</h2>
+      <div *ngIf="sections['evaluacion']">
+        <p>Descripción de la evaluación de {{ activeTab }}...</p>
+      </div>
+    </div>
+  </div>
+</div>

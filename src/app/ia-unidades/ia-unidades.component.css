@@ -1,0 +1,42 @@
+.unidad-container {
+    padding: 20px;
+  }
+  
+  .top-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .top-nav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .top-nav button:hover {
+    background-color: #0056b3;
+  }
+  
+  .unidad-content h1 {
+    margin-top: 0;
+  }
+  
+  .unidad-section {
+    margin: 20px 0;
+  }
+  
+  .unidad-section h2 {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .unidad-section div {
+    padding: 10px;
+    background-color: #e2e2e2;
+  }
+  

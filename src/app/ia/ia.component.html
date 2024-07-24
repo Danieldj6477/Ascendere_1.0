@@ -1,0 +1,49 @@
+<div class="course-details">
+  <nav>
+    <button (click)="setActiveTab('inicio')">INICIO</button>
+    <button>Unidad 1</button>
+    <button>Unidad 2</button>
+    <button>Unidad 3</button>
+    <button>Unidad 4</button>
+    <button>Unidad 5</button>
+  </nav>
+  <h1>Creación de Contenidos Educativos Utilizando IA</h1>
+  <div class="video-section">
+    <img src="assets/images/placeholder-video.png" alt="Video Placeholder">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+  <nav class="tabs">
+    <button (click)="setActiveTab('resultados')">Resultado de aprendizaje</button>
+    <button (click)="setActiveTab('metodologia')">Metodología</button>
+    <button (click)="setActiveTab('perfil')">Perfil docente autor</button>
+    <button (click)="setActiveTab('criterios')">Criterios de evaluación</button>
+    <button (click)="setActiveTab('ruta')">Ruta de aprendizaje</button>
+    <button (click)="setActiveTab('avales')">Avales</button>
+  </nav>
+  <div class="tab-content">
+    <div *ngIf="activeTab === 'resultados'">
+      <h2>Resultados de aprendizaje</h2>
+      <p>Contenido relacionado a los resultados de aprendizaje...</p>
+    </div>
+    <div *ngIf="activeTab === 'metodologia'">
+      <h2>Metodología</h2>
+      <p>Contenido relacionado a la metodología...</p>
+    </div>
+    <div *ngIf="activeTab === 'perfil'">
+      <h2>Perfil docente autor</h2>
+      <p>Contenido relacionado al perfil del docente autor...</p>
+    </div>
+    <div *ngIf="activeTab === 'criterios'">
+      <h2>Criterios de evaluación</h2>
+      <p>Contenido relacionado a los criterios de evaluación...</p>
+    </div>
+    <div *ngIf="activeTab === 'ruta'">
+      <h2>Ruta de aprendizaje</h2>
+      <p>Contenido relacionado a la ruta de aprendizaje...</p>
+    </div>
+    <div *ngIf="activeTab === 'avales'">
+      <h2>Avales</h2>
+      <p>Contenido relacionado a los avales...</p>
+    </div>
+  </div>
+</div>

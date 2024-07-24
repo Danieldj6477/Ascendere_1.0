@@ -1,46 +1,41 @@
 .course-list {
-    padding: 20px;
-  }
-  
-  .course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .course-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .course-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .course-card h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  .course-card p {
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-  
-  .course-card button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .course-card button:hover {
-    background-color: #0056b3;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  text-align: center;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+}
+
+.course-card h3 {
+  font-size: 1.5em;
+}
+
+.course-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+.course-card .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.course-card .btn:hover {
+  background-color: #0056b3;
+}

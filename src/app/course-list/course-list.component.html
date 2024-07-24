@@ -1,13 +1,10 @@
-
 <div class="course-list">
-    <h2>Cursos populares</h2>
-    <div class="course-grid">
-      <div class="course-card" *ngFor="let course of courses">
-        <img [src]="course.image" alt="course image">
-        <h3>{{ course.title }}</h3>
-        <p>{{ course.description }}</p>
-        <button>Entrar</button>
-      </div>
-    </div>
+  <h2>Cursos populares</h2>
+  <div class="course-card" *ngFor="let course of courses">
+    <img [src]="course.image" alt="{{course.title}}">
+    <h3>{{course.title}}</h3>
+    <p>{{course.description}}</p>
+    <button class="btn btn-primary" [routerLink]="['/ia']">{{course.boton}}</button>
+    <button class="btn btn-primary" [routerLink]="['/ia-unidades']">{{course.boton}}</button>
   </div>
-  
+</div>
